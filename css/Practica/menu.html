@@ -1,0 +1,206 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Tacos</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Menu {
+            background-color: #DAF7A6;
+            position: relative;
+            width: 100%;
+            height: 12%;
+            display: inline-block;
+        }
+
+        .Navegacion {
+            padding-left: 300px;
+        }
+
+        .Navegacion li a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            display: block;
+        }
+
+        .Navegacion li {
+            display: inline-block;
+            text-align: center;
+            font-size: 35px;
+            padding: 10px;
+            margin-inline-start: 100px;
+        }
+
+        .Navegacion li a:hover {
+            padding-inline: 50px;
+            background: #C3A6F7;
+        }
+
+        .Menu_Tacos {
+            position: relative;
+            background-image: url("media/Tacos\ fondo.jpg");
+            background-repeat: repeat-x repeat-y;
+            height: 80%;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .Menu_Tacos section article {
+            position: relative;
+            background-color: #C3A6F7;
+        }
+
+        .Presentacion_1 {
+            position: absolute;
+            background-color: #C3A6F7;
+            top: 10%;
+            left: 10%;
+            height: 500px;
+            width: 400px;
+        }
+
+        .Presentacion_1 p,
+        .Presentacion_2 p,
+        .Presentacion_3 p {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-weight: 700;
+            font-size: 30;
+        }
+
+        .Presentacion_1 dl dt,
+        .Presentacion_1 dl dd {
+            position: relative;
+            color: white;
+            text-align: left;
+            font-weight: 700;
+            font-size: 25;
+            padding: 8;
+        }
+
+        .Presentacion_2 ul li {
+            text-decoration: none;
+            position: relative;
+            color: white;
+            text-align: left;
+            font-weight: 700;
+            font-size: 25;
+            padding: 8;
+            display: flex;
+        }
+
+        .Presentacion_3 dl dt,
+        .Presentacion_3 dl dd {
+            position: relative;
+            color: white;
+            text-align: left;
+            font-weight: 700;
+            font-size: 25;
+            padding: 8;
+        }
+
+        .Presentacion_2 {
+            position: absolute;
+            background-color: #C3A6F7;
+            top: 10%;
+            left: 65%;
+            height: 500px;
+            width: 400px;
+        }
+
+        .Presentacion_3 {
+            position: absolute;
+            background-color: #C3A6F7;
+            top: 25%;
+            left: 37%;
+            height: 500px;
+            width: 400px;
+        }
+
+
+        .About {
+            position: relative;
+            background-color: #DAF7A6;
+            height: 10%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        .About p {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 10%;
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="Menu">
+        <ul class=" Navegacion">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Ordena</a></li>
+            <li><a href="">Nosotros</a></li>
+        </ul>
+    </nav>
+    <section class="Menu_Tacos">
+        <article class="Presentacion_1">
+            <p>Tacos</p>
+            <dl>
+                <dt>Tamco de suamdero</dt>
+                <dd>Tortila de maiz pequeña con suadero------------$15</dd>
+                <dt>Tamco de pamstor</dt>
+                <dd>Tortila de maiz pequeña con pastor------------$15</dd>
+                <dt>Tamco de trimpa</dt>
+                <dd>Tortila de maiz pequeña con tripa------------$15</dd>
+            </dl>
+        </article>
+        <article class="Presentacion_2">
+            <p>Extras</p>
+            <ul>
+                <li>Cilamtro</li>
+                <li>Cembolla</li>
+                <li>Quemso------------------------$5</li>
+            </ul>
+        </article>
+        <article class="Presentacion_3">
+            <p>Salsas</p>
+            <dl>
+                <dt>Salmsa vermde</dt>
+                <dd>Salsa a base de chile verde con especias</dd>
+                <dt>Salmsa romja</dt>
+                <dd>Salsa a base de chile rojo con especias</dd>
+                <dt>Salmsa no porque pimca</dt>
+                <dd>Salsa especial de la casa con chile habanero y mango</dd>
+            </dl>
+        </article>
+    </section>
+    <div class="About">
+        <p>Las imágenes publicadas son meramente ilustrativas y pueden diferir del producto final. <br>
+            Los precios y descripciones de los productos se encuentran sujetos a cambio y sin previo aviso. <br>
+            Las existencias de los productos pueden variar de acuerdo con la disponibilidad real en el almacén.</p>
+    </div>
+    <img src="media/Logo.png" alt="" class="logo">
+</body>
+
+</html>
