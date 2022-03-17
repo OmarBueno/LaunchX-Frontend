@@ -37,7 +37,7 @@ const cambiarImg = (url) => {
 const cambiarDatos = (nombre, tipo, vida, ataque, defensa, velocidad, mov_1, mov_2) => {
     document.getElementById("nombre_pokemon").innerHTML = nombre;
     document.getElementById("tipo_pokemon").innerHTML = tipo;
-    document.getElementById("estadisticas").innerHTML = "Estadistica";
+    document.getElementById("estadisticas").innerHTML = "Estadisticas";
     document.getElementById("vida_pokemon").innerHTML = "Vida";
     document.getElementById("ataque_pokemon").innerHTML = "Ataque";
     document.getElementById("defensa_pokemon").innerHTML = "Defensa";

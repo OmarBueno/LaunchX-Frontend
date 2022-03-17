@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("fondo2.jpg");
+    background-repeat: repeat-x repeat-y;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1500px;
+    min-width: 370px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    background: #bc3c69;
+}
+
+.contenedor > div,
+.contenedor > header {
+    background-color: #3cbc8f;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.contenedor header {
+    background: #bc3c69;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .contenedor .estadisticas,
+.contenedor .movimientos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.contenedor .imagen_nombre {
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: -1;
+}
+
+p,
+h2 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 5px;
+}
+
+dl {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+dd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    color: #bc3c69;
+    font-weight: bolder;
+    font-size: 25px;
+}
+dt {
+    padding-left: 50px;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.btn_buscar {
+    position: relative;
+    top: 10;
+    height: 50;
+    width: 100;
+    background-color: #bc3c69;
+    font-weight: bolder;
+    font-size: 20;
+    color: white;
+}
+
+input {
+    background: #e1d2fb;
+    width: 250;
+    font-size: 18;
+    margin-bottom: 10;
+    margin-top: 5;
+    margin-left: 30;
+    height: 35;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor .imagen_nombre {
+        grid-column: 1/-1;
+    }
+    .contenedor .estadisticas,
+    .contenedor .movimientos {
+        grid-column: 1/-1;
+    }
+}

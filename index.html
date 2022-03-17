@@ -5,35 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <h1>Pokedex</h1>
-    <h2 id="nombre_pokemon"></h2>
-    <img src="pika.jpg" alt="pokemon" id="poke_img" height="200" width="300"><br>
-    <input type="text" placeholder="Pokemon" id="Poke_name" name="Poke_name">
-    <button onclick="buscarPokemon()"> Buscar</button>
-    <p id="tipo_pokemon"></p>
-    <dl id="Stats">
-        <p id="estadisticas"></p>
-        <dt id="vida_pokemon"></dt>
-        <dd id="vida_valor"></dd>
-        <dt id="ataque_pokemon"></dt>
-        <dd id="ataque_valor"></dd>
-        <dt id="defensa_pokemon"></dt>
-        <dd id="defensa_valor"></dd>
-        <dt id="velocidad_pokemon"></dt>
-        <dd id="velocidad_valor"></dd>
-    </dl>
-    <dl id="Moves">
-        <p id="movimientos"></p>
-        <dt id="movimiento_1"></dt>
-        <dd id="mov1_valor"></dd>
-        <dt id="movimiento_2"></dt>
-        <dd id="mov2_valor"></dd>
-    </dl>
-
+    <div class="contenedor ">
+        <header>
+            <h1>Pokedex</h1>
+        </header>
+        <div class="imagen_nombre">
+            <h2 id="nombre_pokemon">Ingese un pokemon </h2>
+            <img src="pika.jpg" alt="pokemon" id="poke_img" height="200" width="300"><br>
+            <p id="tipo_pokemon"></p>
+            <input type="text" placeholder="Pokemon" id="Poke_name" name="Poke_name"> <br>
+            <button onclick="buscarPokemon()" class="btn_buscar"> Buscar</button>
+        </div>
+        <div class="estadisticas">
+            <p id="estadisticas"></p> <br>
+            <dl id="Stats">
+                <dt id="vida_pokemon"></dt>
+                <dd id="vida_valor"></dd> 
+                <dt id="ataque_pokemon"></dt>
+                <dd id="ataque_valor"></dd>
+                <dt id="defensa_pokemon"></dt>
+                <dd id="defensa_valor"></dd>
+                <dt id="velocidad_pokemon"></dt>
+                <dd id="velocidad_valor"></dd>
+            </dl>
+        </div>
+        <div class="movimientos"> 
+            <p id="movimientos"></p> <br>
+            <dl id="Moves">
+                <dt id="movimiento_1"></dt>
+                <dd id="mov1_valor"></dd>
+                <dt id="movimiento_2"></dt>
+                <dd id="mov2_valor"></dd>
+            </dl>
+        </div>
+    </div>
 </body>
+
 <footer>
     <script src="pokedex.js"></script>
 </footer>
